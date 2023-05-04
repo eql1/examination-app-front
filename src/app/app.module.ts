@@ -8,10 +8,17 @@ import { HeaderComponent } from './core/layout/header/header.component';
 import { FooterComponent } from './core/layout/footer/footer.component';
 import { UsersComponent } from './features/users/users.component';
 import { UsersModule } from './features/users/users.module';
+import { ExamsModule } from './features/exams/exams.module';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, UsersModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    UsersModule,
+    ExamsModule,
+  ],
   providers: [UsersComponent],
   bootstrap: [AppComponent],
 })

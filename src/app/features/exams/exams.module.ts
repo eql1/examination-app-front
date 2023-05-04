@@ -4,7 +4,7 @@ import { ExamsComponent } from './exams.component';
 
 @NgModule({
   declarations: [ExamsComponent],
+  exports: [ExamsComponent],
   imports: [CommonModule],
-  exports: [],
 })
 export class ExamsModule {}

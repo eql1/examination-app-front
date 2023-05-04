@@ -1,4 +1,4 @@
-<div class="w-full p-6 flex items-center flex-col">
+<!-- <div class="w-full p-6 flex items-center flex-col">
   <div
     class="flex flex-col border rounded-md border-gray-200 px-6 py-3 w-1/2 my-3 relative"
     *ngFor="let user of users"
@@ -13,9 +13,37 @@
       <span class="font-medium">{{ user.personalCode }}</span>
     </p>
     <button
-      class="absolute right-6 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+      class="absolute right-6 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-4 border border-gray-400 rounded shadow"
     >
-      Button
+      Delete
     </button>
+  </div>
+</div> -->
+
+<div class="p-6">
+  <div class="grid grid-cols-6 gap-5 justify-end">
+    <div
+      class="px-4 pt-4 flex flex-col items-center border rounded-md p-3 shadow transition duration-150"
+      *ngFor="let user of users"
+    >
+      <h5 class="text-2xl font-medium">{{ user.name }} {{ user.surname }}</h5>
+      <span class="text-gray-700 text-md">{{ user.personalCode }}</span>
+      <span class="text-gray-500 text-sm">
+        {{ user.institutionInformation }}</span
+      >
+
+      <div class="flex mt-4 space-x-4 mb-2">
+        <button
+          class="text-white border border-gray-300 inline-flex text-sm px-6 py-2 bg-blue-700 rounded-md font-medium hover:bg-blue-800"
+        >
+          Edit
+        </button>
+        <button
+          class="border border-gray-300 text-black inline-flex text-sm px-6 py-2 rounded-md font-medium hover:bg-gray-50"
+        >
+          Add exam
+        </button>
+      </div>
+    </div>
   </div>
 </div>

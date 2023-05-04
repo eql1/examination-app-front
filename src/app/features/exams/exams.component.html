@@ -1,4 +1,45 @@
-<div *ngFor="let exam of exams">
-  <h1>{{ exam.name }}</h1>
-  <p>{{ exam.description }}</p>
+<!-- <div class="w-full p-6 flex items-center flex-col">
+  <div
+    class="flex flex-col border rounded-md border-gray-200 px-6 py-3 w-1/2 my-3 relative"
+    *ngFor="let user of users"
+  >
+    <h1 class="font-bold">{{ user.name }} {{ user.surname }}</h1>
+    <p>
+      Insitution:
+      <span class="font-medium">{{ user.institutionInformation }}</span>
+    </p>
+    <p>
+      Personal code:
+      <span class="font-medium">{{ user.personalCode }}</span>
+    </p>
+    <button
+      class="absolute right-6 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-4 border border-gray-400 rounded shadow"
+    >
+      Delete
+    </button>
+  </div>
+</div> -->
+
+<div class="p-6">
+  <div class="grid grid-cols-6 gap-5 justify-end">
+    <div
+      class="px-4 pt-4 flex flex-col items-center border rounded-md p-3 shadow transition duration-150"
+      *ngFor="let exam of exams"
+    >
+      <h5 class="text-2xl font-medium">{{ exam.name }}</h5>
+      <p class="text-sm text-gray-700">{{ exam.description }}</p>
+      <div class="flex mt-4 space-x-4 mb-2">
+        <button
+          class="text-white border border-gray-300 inline-flex text-sm px-6 py-2 bg-blue-700 rounded-md font-medium hover:bg-blue-800"
+        >
+          Edit
+        </button>
+        <button
+          class="border border-gray-300 text-black inline-flex text-sm px-6 py-2 rounded-md font-medium hover:bg-gray-50"
+        >
+          Add exam
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

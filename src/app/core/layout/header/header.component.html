@@ -9,17 +9,23 @@
     <div class="flex flex-wrap content-start">
       <ul class="justify-between flex font-medium space-x-8">
         <li class="inline-block">
-          <a routerLink="/users-component">Users</a>
+          <a routerLink="/users-component" routerLinkActive="active-link"
+            >Users</a
+          >
         </li>
         <li class="inline-block">
-          <a routerLink="/exams-component">Exams</a>
+          <a routerLink="/exams-component" routerLinkActive="active-link"
+            >Exams</a
+          >
         </li>
-        <li class="inline-block"><a href="#">Report</a></li>
+        <li class="inline-block">
+          <a href="#" routerLinkActive="active-link">Report</a>
+        </li>
       </ul>
     </div>
     <a class=""
       ><button
-        class="font-semibold text-md border px-16 py-2 rounded-md border-gray-700 hover:bg-cyan-100 transition duration-150"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"
       >
         Profile
       </button></a

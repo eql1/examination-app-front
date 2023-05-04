@@ -1,0 +1,13 @@
+.nav {
+  @apply bg-slate-400;
+}
+
+li {
+  > a {
+    @apply transition;
+  }
+
+  > a:hover {
+    @apply text-blue-500;
+  }
+}
